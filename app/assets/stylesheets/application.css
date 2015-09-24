@@ -100,3 +100,23 @@ footer ul {
     margin: 0 5px;
     float: right;
 }
+
+#profile_pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 180px;
+    float: left;
+    border: 3px solid #000;
+    margin: 0 10px 10px 0;
+}
+
+#summary p{
+    size: 1.25em;
+    margin: 5px;
+}
+
+#welcome {
+    text-align: center;
+    margin: 5px;
+    size: 3em;
+}
