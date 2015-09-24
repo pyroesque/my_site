@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+a {
+    text-decoration: none;
+    color: #248f24;
+}
+
+a.visited {
+    color: #248f24;
+}
+
+a.hover {
+    color: #248f24;
+}
+
+header {
+    font-family: 'Ubuntu Mono', serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #1A8E18;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    float: left;
+    width: 100%;
+    border-bottom: 10px solid #0b6109;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+    
+header h2 {
+    font-size: 1em;
+    margin-top: 0px;
+}
+    
+header a {
+    color: #fff;
+}
+#logo {
+    float: left;
+    text-align: center;
+    margin: 0;
+    
+}
+
+nav {
+    background-color: #1a8e18;
+    text-align: right;
+    padding: 10px, 0;
+    margin: 100px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+footer {
+    background-color: #1a8e18;
+    height: 22px;
+    clear: both;
+}
+
+#copy {
+    margin: 0 10px 0 0;
+    text-align: center;
+    width: 25%;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 5px;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    float: right;
+}

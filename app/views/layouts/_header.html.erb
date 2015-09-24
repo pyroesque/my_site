@@ -1,0 +1,16 @@
+<header>
+    <%= link_to  raw("<h1>Chris Jones</h1>
+        <h2>Computer Engineer</h2>"), root_path, {id: "logo"} %>
+        
+    
+    <nav>
+        <ul>
+            <li><%= link_to("Home", root_path) %></li>
+            <li><%= link_to("Portfolio", portfolio_path) %></li>
+            <li><%= link_to("Resume", resume_path) %></li>
+            <li><%= link_to("About", about_path) %></li>
+            <li><%= link_to("Contact", contact_path) %></li>
+        </ul>
+        
+    </nav>
+</header>
