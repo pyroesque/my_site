@@ -1,0 +1,77 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#contents {
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: fixed;
+    top: 160px;
+    left: 10px;
+    background-color:  #1A8E18;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    a {
+        color: #fff;
+    }
+}
+
+#contents ul {
+    list-style: none;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.resume_head {
+    font-weight: 500;
+    font-size: 2em;
+    font-family: sans;
+    border-bottom: 2px solid #000;
+}
+
+.resume_sub {
+    font-size: 1em;
+    margin: 2px 0 2px 0;
+}
+
+#resume_body {
+    width: 70%;
+    height: 70%;
+    margin: 0 20%;
+    padding: 150px 0 0 0;
+    position: relative;
+    
+}
+
+#summary p{
+    size: 1.25em;
+    margin: 5px;
+}
+
+#welcome {
+    text-align: center;
+    margin: 5px;
+    size: 3em;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.date {
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+#cont_list {
+    display: none;
+}
+
+#contents:hover #cont_list {
+    
+    display:block;
+}

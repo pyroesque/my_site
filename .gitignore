@@ -11,3 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
+/app/views/static_pages/resume.html.erb
+/config/database.yml
+/config/secrets.yml

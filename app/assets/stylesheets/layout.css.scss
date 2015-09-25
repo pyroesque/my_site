@@ -1,0 +1,100 @@
+$main-color: #1A8E18;
+$high-color: darken(#1A8E18, 20%);
+
+a {
+    text-decoration: none;
+    color: #248f24;
+    &.visited {
+        color: #248f24;
+    }
+    &.hover {
+        color: #248f24;
+    }
+}
+
+header {
+    font-family: 'Ubuntu Mono', serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: $main-color;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    float: left;
+    width: 100%;
+    border-bottom: 10px solid $high-color;
+    
+    h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+     }
+    
+    h2 {
+        font-size: 1em;
+        margin-top: 0px;
+     }
+    
+    a {
+        color: #fff;
+    }
+}
+
+#logo {
+    float: left;
+    text-align: center;
+    margin: 0;
+    
+}
+
+nav {
+    background-color: $main-color;
+    text-align: right;
+    padding: 10px, 0;
+    margin: 100px 0 0;
+    
+    ul {
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    li {
+        display: inline-block;
+        padding: 5px;
+    }
+}
+
+footer {
+    background-color: $main-color;
+    height: 22px;
+    clear: both;
+    ul {
+        list-style: none;
+        margin: 0 0 0 20px;
+        padding: 5px;
+    }
+}
+
+#copy {
+    margin: 0 10px 0 0;
+    text-align: center;
+    width: 25%;
+}
+
+.social {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    float: right;
+}
+
+#profile_pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 180px;
+    float: left;
+    border: 3px solid #000;
+    margin: 0 10px 10px 0;
+}
+

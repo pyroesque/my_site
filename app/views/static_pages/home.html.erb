@@ -1,4 +1,4 @@
-<% provide(title: "Home") %>
+<% provide(:title, "Home") %>
 <div id="welcome">
 <h1>Welcome to my site</h1>
 </div>
@@ -8,7 +8,7 @@
         Hello and welcome to my website. This site contains a little information 
         about me. If you are a potential employer that has stumbled upon my site 
         or been directed by my resume than please feel free to check out my online
-        <%= link_to "resume", '#' %> and <%= link_to "portfolio", '#' %>. 
+        <%= link_to "resume", resume_path %> and <%= link_to "portfolio", '#' %>. 
     </p>
     <p>
         I am a computer engineer that is just starting out my career. I have a big
