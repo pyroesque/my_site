@@ -13,4 +13,14 @@
         </ul>
         
     </nav>
+    
+    <div id="login_section">
+        <% if current_user %>
+            Currently logged in as: <%=  current_user.name %> | <%= link_to "Logout", logout_path %>
+        <% else %>
+            <%= link_to "Login", login_path %>
+        <% end %>
+            
+        
+    </div>
 </header>

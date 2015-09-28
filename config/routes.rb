@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  
+
+  post 'portfolios' => 'portfolio#create'
+  get 'portfolios' => 'static_pages#portfolio'
+  get 'portfolios/destroy' => 'portfolio#destroy'
+  post 'portfolios/edit' => 'portfolio#edit'
+  
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
+  get 'user/new'
+
+  get 'user/create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,7 +25,11 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   get 'portfolio' => 'static_pages#portfolio'
   get 'resume' => 'static_pages#resume'
-
+  get 'signup' => 'users#new'
+  post 'users' => 'users#create'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

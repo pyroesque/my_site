@@ -75,3 +75,19 @@
     
     display:block;
 }
+
+#project_table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: lighten($main-color,50%);
+    &, th, td{    border: 1px solid #000;}
+    th {
+        background-color:  lighten($main-color,40%);
+    }
+}
+
+#portfolio {
+    position: relative;
+    left: 10%;
+    right: 10%;
+}

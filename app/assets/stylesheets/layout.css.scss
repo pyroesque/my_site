@@ -98,3 +98,6 @@ footer {
     margin: 0 10px 10px 0;
 }
 
+.flash.success {border: 2px solid green; color: green;}
+.flash.error {border: 2px solid red; color: red;}
+.flash.notice {border: 2px solid blue; color: blue;}

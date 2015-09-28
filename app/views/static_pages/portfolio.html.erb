@@ -1,0 +1,51 @@
+<h1>Portfolio</h1>
+<p>Here are some examples of my work, at least what I can show. These are mostly school projects 
+or stuff I've played with at home.</p>
+<div id="portfolio">
+    <table id="project_table">
+        <tr>
+            
+            <th>Project</th>
+            <th>Description</th>
+            <th>Link</th>
+            <% if current_user && current_user.admin %>
+                <th>Action</th>
+            <% end %>
+        </tr>
+        <% Portfolio.all.each do |p| %>
+            <tr>
+                <% if p.id == params[:id].to_i %>
+                    <%= form_tag portfolios_edit_path do %>
+                        <td><%= text_field_tag('project',p.project) %></td>
+                        <td><%= text_area_tag('description',p.description) %></td>
+                        <td><%= text_area_tag('links', p.links) %></td>
+                        <td><%= submit_tag("Save Edits") %></td>
+                    <% end %>
+                <% else %>
+                    <td><%= p.project %></td>
+                    <td><%= p.description %></td>
+                    <% link = p.links.split('|') %>
+                    <td><%= link_to(link[0], link[1], {target:"blank"})%></td>
+                    <% if current_user && current_user.admin %>
+                        <td><%= link_to("Delete",portfolios_destroy_path(:id => p.id), {:class => "button"}) %> | <%= link_to("Edit", portfolios_path(:id => p.id)) %></td>
+                    <% end %>
+                <% end %>
+            </tr>
+        <% end %>
+        
+        <% if current_user && current_user.admin && params[:id].nil?%>
+            <% @portfolio = Portfolio.new %>
+            <%= form_for @portfolio do |f| %>
+               
+                <tr>
+                    <td><%= f.text_field :project %></td>
+                    <td><%= f.text_area :description %></td>
+                    <td><%= f.text_area :links %></td>
+                    <td><%= f.submit "Add" %></td>
+                </tr>
+                
+            <% end %>
+        <% end %>
+    </table>
+    
+</div>
