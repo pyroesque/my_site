@@ -23,10 +23,20 @@ class PortfolioController < ApplicationController
   end
   
   def edit
+    @project = Portfolio.find_by(:id => params[:id])
+    @project.project = params[:project]
+    @project.description = params[:description]
+    @project.link = params[:link]
+    if @project.save
+      flash[:success] = "Project successfully updated."
+    else
+      flash[:error] = "Project edits not saved."
+    end
+    redirect_to portfolio
   end
   
   private
     def portfolio_params
-      params.require(:portfolio).permit(:project,:description,:links)
+      params.require(:portfolio).permit(:project,:description,:link)
     end
 end
